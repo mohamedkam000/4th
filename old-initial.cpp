@@ -125,7 +125,7 @@ int main()
  */
 	}
 	else {
-		cout << "\nYou have chosen a non-existent Shape, reconsider your choice from the list above!\n";
+		cout << "\nYou have chosen a non-existent Shape, reconsider your choice from the list above!";
 		cout << "\n-----------------------------------------------------------\n" << endl;
 		goto loop;
 // repeat the iterative loop after failure to satisfy the condition
