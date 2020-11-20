@@ -264,7 +264,7 @@ loop:
 		are = wid * length;
 		circum = 2 * (length + wid);
 	}
-// same as line 251/252/256/257
+// same as line 252/253/257/258
 // else if function drives the code to the next condition in case the
 // first one did not satisfy
 	else if (strcmp(pref, "Square") == 0){
@@ -272,14 +272,14 @@ loop:
 		cin >> length;
 		are = length * length;
 		circum = 4 * length;
-// same as line 266
+// same as line 267
 	}
 	else if (strcmp(pref, "Circle") == 0){
 		cout << "\nEnter Circle's radius value: ";
 		cin >> radi;
 		are = pi * radi * radi;
 		circum = 2 * pi * radi;
-// same as line 274
+// same as line 275
 	}
 	else if (strcmp(pref, "Polygon") == 0){
 		cout << "\nEnter Polygon's apothem value: ";
@@ -288,7 +288,7 @@ loop:
 		cin >> length;
 		are = 0.5 * apothem * 5 * length;
 		circum = length * 5;
-// same as line 281
+// same as line 282
 	}
 	else if (strcmp(pref, "Ellipse") == 0){
 		double maj,min;
@@ -300,11 +300,11 @@ loop:
 		cin >> min;
 		are = pi * maj * min;
 		circum = 2 * pi * sqrt(((maj * maj)+ (min * min)) * 0.5);
-// same as line 290
+// same as line 291
 	}
 	else if (strcmp(pref, "Oval") == 0){
 		double maj,min;
-// same as line 294/295
+// same as line 295/296
 		cout << "\nEnter Oval's Major Axis value: ";
 		cin >> maj;
 		cout << "Enter Oval's Minor Axis value: ";
@@ -314,7 +314,7 @@ loop:
 // with the same equation, making it sort of a duplicated shape
 		circum = 2 * pi * sqrt(((maj * maj)+ (min * min)) * 0.5);
 	}
-// same as line 302
+// same as line 303
 	else if (strcmp(pref, "Q") == 0){
 		return 0;
 	}
@@ -339,21 +339,21 @@ loop:
 // to understand this code, therefore no need for silly explanations
 	Circ.setRadius(radi);
 	C.setRadi(radi);
-// same as line 329/330/333/334
+// same as line 334/335/338/339
 	Poly.setApothem(apothem);
 	Poly.setHeight(length);
 	P.setLength(length);
-// same as line 337
+// same as line 342
 	Elli.setMajor(major);
 	Elli.setMinor(minor);
 	E.setMini(mini);
 	E.setMaxi(maxi);
-// same as line 341
+// same as line 346
 	Ova.setMajor(major);
 	Ova.setMinor(minor);
 	O.setMaxi(maxi);
 	O.setMini(mini);
-// same as line 346
+// same as line 351
 	cout << "\n" << pref << "'s " << "Area is: " << are << endl;
 	cout << pref << "'s " << "Circumference is: " << circum << endl;
 // this part has been specificlly placed here for viewing the result,
