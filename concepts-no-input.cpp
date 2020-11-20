@@ -116,7 +116,7 @@ class Rectan: public Circumference {
 class Ov: public Circumference {
 	public:
 		float getCircumference() { 
-			return (2 * pi * sqrt((maj * maj) + (min * min)) * 0.5);
+			return (2 * pi * sqrt((maxi * maxi) + (mini * mini)) * 0.5);
 		}
 };
 class Squa: public Circumference {
@@ -128,7 +128,7 @@ class Squa: public Circumference {
 class Cir: public Circumference {
 	public:
 		float getCircumference() { 
-			return (2 * pi * rad);
+			return (2 * pi * radi);
 		}
 };
 class Pol: public Circumference {
@@ -140,7 +140,7 @@ class Pol: public Circumference {
 class Ellip: public Circumference {
 	public:
 		float getCircumference() { 
-			return (2 * pi * sqrt((maj * maj) + (min * min)) * 0.5);
+			return (2 * pi * sqrt((maxi * maxi) + (mini * mini)) * 0.5);
 		}
 };
 class Trian: public Circumference {
@@ -233,38 +233,38 @@ int main(void){
 	T.setLength1(5);
 	T.setLength2(8);
 	T.setLength3(12);
-	cout << "Total Triangle area: " << Tri.getArea() << endl; 
+	cout << "\nTotal Triangle area: " << Tri.getArea() << endl; 
 	cout << "Total Triangle circumference: " << T.getCircumference() << endl; 
 // same as line 229/230
 	Sqr.setHeight(4);
 	S.setLength(6);
-	cout << "Total Square area: " << Sqr.getArea() << endl;
-	cout << "Total Triangle circumference: " << S.getCircumference() << endl; 
+	cout << "\nTotal Square area: " << Sqr.getArea() << endl;
+	cout << "Total Square circumference: " << S.getCircumference() << endl; 
 // same as line 238
 	Circ.setRadius(6);
 	C.setRadi(5);
-	cout << "Total Circle area: " << Circ.getArea() << endl;
-	cout << "Total Triangle circumference: " << C.getCircumference() << endl; 
+	cout << "\nTotal Circle area: " << Circ.getArea() << endl;
+	cout << "Total Circle circumference: " << C.getCircumference() << endl; 
 // same as line 243
 	Poly.setApothem(8);
 	Poly.setHeight(6);
 	P.setLength(9);
-	cout << "Total Polygon area: " << Poly.getArea() << endl;
-	cout << "Total Triangle circumference: " << P.getCircumference() << endl; 
+	cout << "\nTotal Polygon area: " << Poly.getArea() << endl;
+	cout << "Total Polygon circumference: " << P.getCircumference() << endl; 
 // same as line 248
 	Elli.setMajor(12);
 	Elli.setMinor(4);
 	E.setMini(6);
 	E.setMaxi(20);
-	cout << "Total Ellipse area: " << Elli.getArea() << endl;
-	cout << "Total Triangle circumference: " << E.getCircumference() << endl; 
+	cout << "\nTotal Ellipse area: " << Elli.getArea() << endl;
+	cout << "Total Ellipse circumference: " << E.getCircumference() << endl; 
 // same as line 254
 	Ova.setMajor(12);
 	Ova.setMinor(4);
 	O.setMaxi(17);
 	O.setMini(5);
-	cout << "Total Oval area: " << Ova.getArea() << endl;
-	cout << "Total Triangle circumference: " << O.getCircumference() << endl; 
+	cout << "\nTotal Oval area: " << Ova.getArea() << endl;
+	cout << "Total Oval circumference: " << O.getCircumference() << endl; 
 // same as line 261
 	return 0;
 // for the code to reach this line, it means it has been successfully
