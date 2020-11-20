@@ -18,7 +18,7 @@ class Shape {
 // a class member that is available from any function
 		virtual float getArea() = 0;
 // virtual is a member class that forces the compiler to pick the
-// method implemention defined in the object's class
+// method implementation defined in the object's class
 		void setWidth(float w) {
 			width = w;
 		}
