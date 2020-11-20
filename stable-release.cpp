@@ -233,6 +233,7 @@ loop:
 // saving class member into a variable so it can be called for later
 // result viewing
 	cout << "Supported Shapes: \nTriangle, Rectangle, Square, Circle, Polygon, Ellipse, Oval" << endl;
+	cout << "\nTo Quit, type Q\n";
 	cout << "\nEnter Your prefered shape: ";
 	cin >> pref;
 	if (strcmp(pref, "Triangle") == 0){
@@ -314,6 +315,10 @@ loop:
 		circum = 2 * pi * sqrt(((maj * maj)+ (min * min)) * 0.5);
 	}
 // same as line 302
+	else if (strcmp(pref, "Q") == 0){
+		return 0;
+	}
+// typing Q will exit program
 	else {
 		cout << "\nWrong choice, choose again ...\n";
 		cout << "\n------------------------------------------------------------\n" << endl;
