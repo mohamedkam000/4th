@@ -14,3 +14,4 @@
 # Further updates may not happen, and if so, it'll depend on the subject teacher's POV.
 # It is quite simple to use the program, and it only finds circumference and area, nothing else.
 # In order to find them, program will ask you for some values, starting from one for the Circle, up to five for the Triangle.
+# An explanation PDF file is submitted containing details about the code and it's functionality.
