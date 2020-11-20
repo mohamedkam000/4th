@@ -63,15 +63,17 @@ int main()
 		cin >> height;
 		area = width * height;
 		circumference = 2 * (height + width);
-// same as line 52/53
+// same as line 55/56
+// else if function drives the code to the next condition in case the
+// first one did not satisfy
 	}
-	else if (strcmp(shape, "Squire") == 0){
+	else if (strcmp(shape, "Square") == 0){
 		cout << "\nYou have choosed Square!\n\n";
 		cout << "Enter side Square's length value: ";
 		cin >> length;
 		area = length * length;
 		circumference = 4 * length;
-// same as line 63
+// same as line 66/67/68
 	}
 	else if (strcmp(shape, "Circle") == 0){
 		cout << "\nYou have choosed Circle!\n\n";
@@ -79,7 +81,7 @@ int main()
 		cin >> radius;
 		area = pi * radius * radius;
 		circumference = 2 * pi * radius;
-// same as line 74
+// same as line 76
 	}
 	else if (strcmp(shape, "Polygon") == 0){
 		cout << "\nYou have choosed Polygon!\n\n";
@@ -89,7 +91,7 @@ int main()
 		cin >> length;
 		area = 0.5 * apothem * 5 * length;
 		circumference = length * 5;
-// same as line 82
+// same as line 84
 	}
 	else if (strcmp(shape, "Ellipse") == 0){
 		double maj,min;
@@ -102,11 +104,11 @@ int main()
 		cin >> min;
 		area = pi * maj * min;
 		circumference = 2 * pi * sqrt(((maj * maj)+ (min * min)) * 0.5);
-// same as line 92
+// same as line 94
 	}
 	else if (strcmp(shape, "Oval") == 0){
 		double maj,min;
-// same as line 96/97
+// same as line 98/99/107
 		cout << "\nYou have choosed Oval!\n\n";
 		cout << "Enter Oval's Major Axis value: ";
 		cin >> maj;
@@ -116,6 +118,7 @@ int main()
 // since an Oval is actually an Ellipse, it can be solved approximately
 // with the same equation, making it sort of a duplicated shape
 		circumference = 2 * pi * sqrt(((maj * maj)+ (min * min)) * 0.5);
+
 /* 
  * to be noted, using square root is actually an application of Abstraction
  * as we only call sqrt() function available in cmath library, and pass
@@ -123,6 +126,7 @@ int main()
  * according to which the function is actually calculating square root
  * of numbers
  */
+ 
 	}
 	else {
 		cout << "\nYou have chosen a non-existent Shape, reconsider your choice from the list above!\n";
